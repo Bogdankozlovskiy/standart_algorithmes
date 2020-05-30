@@ -1,10 +1,10 @@
 ### Karatsuba multiply
 <img src="https://render.githubusercontent.com/render/math?math=\overline{ab} \cdot \overline{cd}=">
-<img src="https://render.githubusercontent.com/render/math?math=(a\cdot 10 + b)\cdot(c\cdot 10 \p d)=">
+<img src="https://render.githubusercontent.com/render/math?math=(a\cdot 10 + b)\cdot(c\cdot 10 + d)=">
 <img src="https://render.githubusercontent.com/render/math?math=a\cdot c \cdot 100 + a\cdot d \cdot 10 + b\cdot c\cdot 10 + b\cdot d=">
 <img src="https://render.githubusercontent.com/render/math?math=a\cdot c \cdot 100 + (a\cdot d + b\cdot c)\cdot 10 + b\cdot d=">
 <img src="https://render.githubusercontent.com/render/math?math=a\cdot c \cdot 100 + ((a + b)\cdot(c + d) - a\cdot c - b\cdot d)\cdot 10 + b\cdot d">
-
+<img src="https://render.githubusercontent.com/render/math?math=r + y">
 ```python
 from math import log2, ceil
 
