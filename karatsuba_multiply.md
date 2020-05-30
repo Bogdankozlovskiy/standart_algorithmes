@@ -1,5 +1,5 @@
 ### Karatsuba multiply
-
+![](https://github.com/Bogdankozlovskiy/standart_algorithmes/blob/master/images/karatsuba.jpg)
 
 ```python
 from math import log2, ceil
