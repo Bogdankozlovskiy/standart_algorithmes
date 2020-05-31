@@ -1,5 +1,5 @@
 ### Simple Algorith multiply matrix
-![](https://github.com/Bogdankozlovskiy/standart_algorithmes/blob/master/images/matrix multiply.jpg)
+![](https://github.com/Bogdankozlovskiy/standart_algorithmes/blob/master/images/matrix%20multiply.jpg)
 
 ```python
 from math import log2, ceil
