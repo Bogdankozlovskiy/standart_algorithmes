@@ -1,6 +1,5 @@
-### Simple Algorith multiply matrix
 ![](https://github.com/Bogdankozlovskiy/standart_algorithmes/blob/master/images/matrix%20multiply.jpg)
-
+![](https://github.com/Bogdankozlovskiy/standart_algorithmes/blob/master/images/simple%20algorithm.jpg)
 ```python
 from math import log2, ceil
 from random import randint
