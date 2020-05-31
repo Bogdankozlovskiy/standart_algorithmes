@@ -1,3 +1,5 @@
+
+```python
 from math import log2, ceil
 from random import randint
 
@@ -82,3 +84,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
+```
