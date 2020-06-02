@@ -3,9 +3,9 @@
 from queue import Queue # fifo
 
 
-def BFS(edges, start):
+def BFS(graph, start):
     '''breadth-first search'''
-    result = {key:None for key in edges}
+    result = {key:None for key in graph}
     result[start] = 0
     q = Queue()
     q.put(start)
@@ -13,7 +13,7 @@ def BFS(edges, start):
     marked_points.add(start)
     while not q.empty():
         point = q.get()
-        for n in edges[point]:
+        for n in graph[point]:
             if n not in marked_points:
                 result[n] = result[point] + 1
                 marked_points.add(n)
@@ -22,7 +22,7 @@ def BFS(edges, start):
 
 
 def main():
-    edges = {
+    graph = {
         "S":["A", "B"],
         "A":["S", "C"],
         "B":["S", "C", "D"],
@@ -31,7 +31,7 @@ def main():
         "E":["C", "D"]
     }
     start = "S"
-    result = BFS(edges, start)
+    result = BFS(graph, start)
     print(result)
 
 
@@ -40,13 +40,13 @@ if __name__ == '__main__':
 ```
 ### Нахождение связанных компонент
 ```python
-def serachUCC(edges):
+def serachUCC(graph):
     '''unique connect component'''
-    all_point = set(edges.keys())
+    all_point = set(graph.keys())
     count = 0
     while all_point:
         next_point = all_point.pop()
-        result = BFS(edges, next_point)
+        result = BFS(graph, next_point)
         result = set(filter(result.get, result))
         all_point -= result
         count += 1
@@ -54,19 +54,19 @@ def serachUCC(edges):
 
 
 def main():
-    edges = {
-    "A":["B", "C"],
-    "B":["C", "A"],
-    "C":["A","B","D","E"],
-    "D":["C"],
-    "E":["C"],
-    "F":["G"],
-    "G":["F"],
-    "H":["M"],
-    "M":["N", "H"],
-    "N":["M"],
-    }
-    result = serachUCC(edges)
+    graph = {
+        "A":["B", "C"],
+        "B":["C", "A"],
+        "C":["A","B","D","E"],
+        "D":["C"],
+        "E":["C"],
+        "F":["G"],
+        "G":["F"],
+        "H":["M"],
+        "M":["N", "H"],
+        "N":["M"],
+        }
+    result = serachUCC(graph)
     print(result)
 
 
