@@ -1,6 +1,6 @@
 ### recursion fun for find two the most closest points
 + asymptotics is n*log(n)
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;n\cdot_log(n)"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;n\cdot\log(n)"/>
 
 ```python
 from math import sqrt
