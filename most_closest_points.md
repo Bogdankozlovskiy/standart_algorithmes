@@ -1,6 +1,6 @@
 ### recursion fun for find two the most closest points
 + asymptotics is:
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;n\cdot\log(n)" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"/>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;n\cdot\log(n)"/>
 
 ```python
 from math import sqrt
